@@ -1,4 +1,5 @@
 <?php
+include 'register.html';
 #   Form 
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
