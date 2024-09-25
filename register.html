@@ -14,14 +14,18 @@
     />
   </head>
   <body>
+    <!--    nav   -->
     <nav class="bg-base-100 shadow">
       <div class="container mx-auto flex justify-between items-center p-4">
+        <!--    MK TIME logo    -->
         <a href="index.html" class="text-xl font-bold">MK TIME</a>
         <div>
+          <!--    Dropdown    -->
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-outline btn-primary">
               Products
             </div>
+            <!--    Man / Woman selections    -->
             <ul
               tabindex="0"
               class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
@@ -30,29 +34,52 @@
               <li><a href="women.html">Women</a></li>
             </ul>
           </div>
+          <!--    Login Button    -->
           <a href="login.html" class="btn btn-outline btn-primary mr-2"
             >Login</a
           >
         </div>
       </div>
     </nav>
+
     <div class="min-h-screen flex items-center justify-center bg-base-200">
       <div class="card w-full max-w-sm shadow-2xl bg-base-100">
         <div class="card-body">
           <h2 class="text-center text-2xl font-bold">Register</h2>
-          <form>
+
+          <!--    Register Form / Connect to PHP/MySQL    -->
+          <form action="users.php" method="post">
+            <!--    FirsName Form    -->
             <div class="form-control">
               <label class="label" for="name">
-                <span class="label-text">Name</span>
+                <span class="label-text">First Name</span>
               </label>
               <input
                 type="text"
-                id="name"
-                placeholder="Name"
+                id="firstName"
+                placeholder="First Name"
+                name="firstName"
                 class="input input-bordered"
                 required
               />
             </div>
+
+            <!--    LastName Form    -->
+            <div class="form-control">
+              <label class="label" for="name">
+                <span class="label-text">Last Name</span>
+              </label>
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                name="lastName"
+                class="input input-bordered"
+                required
+              />
+            </div>
+
+            <!--    email Form   -->
             <div class="form-control">
               <label class="label" for="email">
                 <span class="label-text">Email</span>
@@ -61,10 +88,13 @@
                 type="email"
                 id="email"
                 placeholder="Email"
+                name="email"
                 class="input input-bordered"
                 required
               />
             </div>
+
+            <!--    Password From   -->
             <div class="form-control">
               <label class="label" for="password">
                 <span class="label-text">Password</span>
@@ -73,14 +103,19 @@
                 type="password"
                 id="password"
                 placeholder="Password"
+                name="password"
                 class="input input-bordered"
                 required
               />
             </div>
+
+            <!--    Register Button-->
             <div class="form-control mt-6">
               <button class="btn btn-primary">Register</button>
             </div>
           </form>
+
+          <!--    Login choice    -->
           <p class="text-center mt-4">
             Already have an account?
             <a href="login.html" class="text-primary">Login</a>
@@ -88,20 +123,26 @@
         </div>
       </div>
     </div>
+
+    <!--    Contact Button    -->
     <a href="/contact-us.html">
       <button class="btn fixed bottom-4 right-4">Contact us</button>
     </a>
 
+    <!--    Footer  -->
     <footer class="bg-base-100 text-base-content py-6">
       <div
         class="container mx-auto flex flex-col lg:flex-row justify-between items-center"
       >
+        <!--    Footer Info   -->
         <div class="mb-4 lg:mb-0">
           <h2 class="text-xl font-bold">Contact Information</h2>
           <p class="mt-2">Telephone: (123) 456-7890</p>
           <p>Email: info@mk_time.com</p>
           <p>Address: 123 Watch St, Mktime City, FC 12345</p>
         </div>
+
+        <!--    Footer Hyperlings   -->
         <div class="flex space-x-4">
           <a href="#" class="btn btn-ghost btn-circle">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
